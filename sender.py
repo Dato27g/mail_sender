@@ -12,9 +12,9 @@ with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
 
     smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
 
-    subject = 'Grab dinner this weekend?'
-    body = "How about dinner at 6pm this Saturday?"
+    subject = 'subject what you want'
+    body = "text body, mail what you sending"
 
     msg = f"Subject: {subject}\n\n{body}"
 
-    smtp.sendmail(EMAIL_ADDRESS, "goderdzi.1972@gmail.com", msg)
+    smtp.sendmail(EMAIL_ADDRESS, "reciver_gmail", msg)
